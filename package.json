@@ -4,8 +4,12 @@
   "description": "Improve your writing skills, for science.",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify public/js/app.js -o public/build/app.js -v -d",
-    "build": "browserify public/js/app.js -o public/build/app.js",
+    "build-js": "browserify public/js/app.js -o public/build/app.js",
+    "watch-js": "watchify public/js/app.js -o public/build/app.js -v -d",
+    "build-sass": "node-sass public/sass/main.scss public/build/main.css",
+    "watch-sass": "nodemon -e scss -w public/sass -x 'npm run build-sass'",
+    "build": "npm run build-js & npm run build-sass",
+    "watch": "npm run watch-js & npm run watch-sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
