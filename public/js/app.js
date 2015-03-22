@@ -1,3 +1,7 @@
-var app = {};
+import React from 'react';
 
-export default app;
+var App = React.createClass({
+
+});
+
+export default App;
