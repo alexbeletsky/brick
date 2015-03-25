@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build-js": "browserify public/js/app.js -o public/build/app.js",
-    "watch-js": "watchify public/js/app.js -o public/build/app.js -v -d",
+    "build-min-js": "browserify public/js/app.js | uglifyjs -o public/build/app.min.js",
+    "watch-js": "nodemon -e js -w public/js -x 'npm run build-js'",
     "build-sass": "node-sass public/sass/main.scss public/build/main.css",
+    "build-min-sass": "node-sass public/sass/main.scss | cleancss -o public/build/main.min.css",
     "watch-sass": "nodemon -e scss -w public/sass -x 'npm run build-sass'",
     "build": "npm run build-js & npm run build-sass",
     "watch": "npm run watch-js & npm run watch-sass",
