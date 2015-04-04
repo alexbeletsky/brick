@@ -1,7 +1,7 @@
 {
-  "name": "editor",
+  "name": "brick",
   "version": "1.0.0",
-  "description": "Improve your writing skills, for science.",
+  "description": "My boilerplate project for Node.js / React.js development",
   "main": "index.js",
   "scripts": {
     "build-js": "browserify public/js/app.js -o public/build/app.js",
