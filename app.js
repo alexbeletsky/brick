@@ -23,5 +23,5 @@ require('./source/api')(app);
 app.use(middleware.errors());
 
 app.listen(port, function () {
-    logger.info('editor-app listening on port ' + port + ' ' + env);
+    logger.info('app listening on port ' + port + ' ' + env);
 });
