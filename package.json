@@ -29,6 +29,12 @@
     "react": "^0.13.1",
     "respawn": "^1.0.1"
   },
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "clean-css": "^3.1.9",
+    "node-sass": "^2.1.1",
+    "uglifyjs": "^2.4.10"
+  },
   "browserify": {
     "transform": [
       "babelify",
@@ -37,10 +43,4 @@
   },
   "author": "alexander.beletsky@gmail.com",
   "license": "MIT",
-  "devDependencies": {
-    "browserify": "^9.0.7",
-    "clean-css": "^3.1.9",
-    "node-sass": "^2.1.1",
-    "uglifyjs": "^2.4.10"
-  }
 }
