@@ -36,5 +36,11 @@
     ]
   },
   "author": "alexander.beletsky@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "clean-css": "^3.1.9",
+    "node-sass": "^2.1.1",
+    "uglifyjs": "^2.4.10"
+  }
 }
